@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    color: #F7F5F9;
 }
 html, body {
     width: 100%;
 }
 a {
     text-decoration: none;
-    color: #F7F5F9;
 }
 body>div:first-child {
     padding: 60px;
@@ -25,7 +25,6 @@ body>div:first-child>div {
     font-family: 'OuterSans-Bold';
     font-size: 14px;
     line-height: 18px;
-    color: #F7F5F9;
     margin-bottom: 60px;
     position: relative;
 }
@@ -36,6 +35,9 @@ body>div:first-child>div {
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+}
+#burger:hover .burger-line{
+    border: 1px solid #ea2030;
 }
 .burger-line {
     width: inherit;
@@ -54,6 +56,9 @@ body>div:first-child>div {
 #lang>p:first-child {
     margin-right: 8px;
     color: rgba(255, 255, 255, 0.3);
+}
+#menu-left>a:hover, #lang>p:hover {
+    color: #ea2030;
 }
 #menu-right>div:first-child {
     margin-right: 80px;
@@ -74,7 +79,6 @@ body>div:first-child>div {
 #cart>svg:last-child {
     position: absolute;
     left: -10px;
-    bottom: -10px;
 }
 #cart>span {
     position: absolute;
@@ -90,52 +94,90 @@ body>div:first-child>div {
     justify-content: space-between;
 }
 .room {
-    width: 351px;
+    width: 19.5%;
     height: 801px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.room:hover {
+    border: 1px solid #ea2030;
+}
+.room:hover .room-title {
+    color: #ea2030;
 }
 .room-1 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 52.74%, rgba(17, 13, 13, 0.9) 100%), url(../img/da-vinci.jpg);
+    background-repeat: no-repeat;
+}
+.room-1>div:last-child, .room-2>div:last-child, .room-3>div:last-child, .room-4>div:last-child, .room-5>div:last-child{
+    width: 71%;
+    position: absolute;
+    bottom: 53px;
 }
 .room-2 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 52.74%, rgba(17, 13, 13, 0.9) 100%), url(../img/mission-belvedere.jpg);
+    background-repeat: no-repeat;
 }
 .room-3 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 52.74%, rgba(17, 13, 13, 0.9) 100%), url(../img/school-of-magic.jpg);
-    position: relative;
+    background-repeat: no-repeat;
 }
 .room-4 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 52.74%, rgba(17, 13, 13, 0.9) 100%), url(../img/the-unknown.jpg);
+    background-repeat: no-repeat;
 }
 .room-5 {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 52.74%, rgba(17, 13, 13, 0.9) 100%), url(../img/the-nun.jpg);
+    background-repeat: no-repeat;
 }
 .room-title {
-    width: 246px;
     height: 72px;
     font-family: 'OuterSans-Bold';
     font-size: 36px;
     line-height: 36px;
-    color: #F7F5F9;
 }
 .ganre {
     font-family: 'OuterSans-Light';
     font-size: 14px;
     line-height: 24px;
-    color: #F7F5F9;
     display: flex;
     align-items: center;
+    margin-top: 45px;
 }
 .ganre>img {
     margin-left: 10px;
 }
 .speciale {
-    width: 110%;
+    width: 120%;
     height: 81.28px;
-    position: absolute;
-    top: 27.47px;
-    left: -5%;
-    background: url(../img/speciale.png);
+    margin-top: 27.47px;
+    background: 50% 50% url(../img/speciale.png) no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9;
+}
+.speciale>div:first-child {
+    font-family: 'Morganite-Bold';
+    font-size: 56px;
+    line-height: 56px;
+    display: flex;
+    flex-direction: row;
+}
+.speciale>div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+.speciale>div:last-child>p:first-child {
+    font-family: 'OuterSans-Light';
+    font-size: 14px;
+    line-height: 24px;
+}
+.speciale>div:last-child>p:first-child+p {
+    font-family: 'OuterSans-Bold';
+    font-size: 18px;
+    line-height: 23px;
 }

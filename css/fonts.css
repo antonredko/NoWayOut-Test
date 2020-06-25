@@ -6,3 +6,7 @@
     font-family: 'OuterSans-Light';
     src: url('../fonts/MADE Outer Sans PERSONAL USE/MADE Outer Sans Light PERSONAL USE.otf') format('opentype');
 }
+@font-face{
+    font-family: 'Morganite-Bold';
+    src: url('../fonts/Morganite/Morganite-Bold.ttf') format('truetype');
+}
